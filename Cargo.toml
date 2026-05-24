@@ -1,0 +1,24 @@
+[workspace]
+resolver = "2"
+
+# Add each practice crate here as you create them, e.g.:
+# members = [
+#   "Practices/Module01_Mindset_Toolchain/hello_workspace",
+#   "Practices/Module02_Ownership_Borrowing/inventory_system",
+# ]
+
+members = [
+  "Practices/Module01_Mindset_Toolchain/hello_workspace",
+  "Practices/Module02_Ownership_Borrowing/ownership_demo",
+  "Practices/Module03_Structs_Enums_Patterns/state_machine",
+  "Practices/Module04_Collections_Strings_Iterators/log_parser",
+  "Practices/Module05_Error_Handling/config_loader",
+  "Practices/Module07_Concurrency/thread_pool_demo",
+  "Practices/Module08_Async_Tokio/async_tcp_server",
+  "Practices/Module11_Tooling_Testing_Benchmarking/bench_demo",
+]
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
